@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--[if IE 6]>		<html id="section-reco_main" class="nojs ie6 ieb7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+    <!--[if IE 7]>		<html id="section-reco_main" class="nojs iea6 ie7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+    <!--[if IE 8]>		<html id="section-reco_main" class="nojs iea6 iea7 ie8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+    <!--[if IE 9]>		<html id="section-reco_main" class="nojs iea6 iea7 iea8 ie9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+    <meta name="viewport" content="width=device-width">
+    <meta name="MobileOptimized" content="320" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta charset="utf-8">
+    <meta name="viewport min-width=320px" content="min-width=320, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+	<![endif]-->
+    <title>index</title>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__logo"><img src="img/logo.svg" alt=""></div>
+                <a class="header__number" href="tel:+78002003235">
+                    <img src="img/phone.svg">8 (800) 200-32-35
+                </a>
+                <a href="" class="header__icon">
+                    <img src="img/phone (1).svg" alt="">
+                </a>
+            </div>
+            <h1 class="header__title">Инвестиционные продукты</h1>
+            <div class="header__subtitle">с потенциальным уровнем доходности</div>
+            <div class="header__percent">до 30+ годовых!</div>
+        </div>
+    </header>
+
+    <div class="calculate__list-item-wr" style="display:none">
+        <li class="calculate__list-item" onclick="o2.dropDownClick('#id#', this)" data-item-id="#item-id#">
+            <div class="calculate__list-plus">+</div>
+            <div class="calculate__list-before">до</div>
+            <div class="calculate__list-percent">#percent#%</div>
+            <div class="calculate__list-text">#label#</div>
+            <div class="calculate__list-mobile">Оптимальное соотношение<br> риска и доходности</div>
+        </li>
+    </div>
+    <section class="calculate">
+        <div class="calculator">
+            <div class="container">
+                <div class="calculate__icon"><img src="img/square-percent.svg" alt=""></div>
+                <h2 class="calculate__title">Посчитайте доходность ваших вложений</h2>
+                <div class="calculate__inner">
+                    <div class="calculate__left">
+                        <h3 class="calculate__left-title">Вы готовы инвестировать</h3>
+                        <div class="calculate__left-wrap">
+                            <div class="calculate__input">
+                                <input type="tel" class="month-input" value="4167">
+                                <div class="placeholder">рублей в месяц</div>
+                            </div>
+                            <span>или</span>
+                            <div class="calculate__input">
+                                <input type="tel" class="year-input" value="50000">
+                                <div class="placeholder">рублей в год</div>
+                            </div>
+                        </div>
+                        <div id="html5" class="calculate__slider"></div>
+                    </div>
+                    <div class="calculate__devider"></div>
+                    <div class="calculate__right">
+
+                        <h3 class="calculate__right-title">Рассчитываете на доходность</h3>
+                        <div class="calculate__list-wrap">
+                            <div class="calculate__list-icon"><img src="img/percent_line.svg" alt=""></div>
+                            <div class="calculate__list-down" onclick="o2.openDropDown(this)">
+                                <div class="calculate__list-plus">+</div>
+                                <div class="calculate__list-before">до</div>
+                                <div class="calculate__list-percent show-percent">36%</div>
+                                <div class="calculate__list-text show-text">Средний уровень риска</div>
+                                <div class="calculate__list-mobile">Оптимальное соотношение<br> риска и доходности</div>
+                                <div class="calculate__list-icon"><img src="img/percent_line.svg" alt=""></div>
+                            </div>
+                            <ul class="calculate__list">
+
+                            </ul>
+                        </div>
+
+                        <hr>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculate__table">
+                <div class="calculate__table-title">Ваша инвестиция в первый год</div>
+                <div class="calculate__table-row">
+                    <div class="calculate__table-number">
+                        <span class="investment-sum">400 000</span></div>
+                    <div class="calculate__table-percent">100%</div>
+                    <div class="calculate__table-text">Сумма вашей инвестиции</div>
+                </div>
+                <div class="calculate__table-row">
+                    <div class="calculate__table-number">
+                        <span class="tax-sum">400 000</span>
+                    </div>
+                    <div class="calculate__table-percent">
+                        <span class="tax-percent">13%</span>
+                    </div>
+                    <div class="calculate__table-text">Налоговый вычет с гарантией выплаты от<br> государства в начале следующего года</div>
+                </div>
+                <div class="calculate__table-row calculate__table-row-share">
+                    <div class="calculate__table-number">
+                        <span class="calculate__table-before">до</span>
+                        <span class="share-sum">400 000</span>
+                    </div>
+                    <div class="calculate__table-percent">
+
+                        <span class="calculate__table-before">до</span>
+                        <span class="share-percent">25%</span>
+                    </div>
+                    <div class="calculate__table-text">
+                        Потенциальный рост стоимости акций
+                    </div>
+                </div>
+                <div class="calculate__table-row calculate__table-row-dividends">
+                    <div class="calculate__table-number">
+                        <span class="calculate__table-before">до</span>
+                        <span class="dividends-sum">20 000</span>
+                    </div>
+                    <div class="calculate__table-percent">
+                        <span class="calculate__table-before">до</span>
+                        <span class="dividends-percent">5%</span>
+                    </div>
+                    <div class="calculate__table-text">Потенциальная доходность от выплаты дивидендов</div>
+                </div>
+                <div class="calculate__table-row calculate__table-row-total">
+                    <div class="calculate__table-number">
+                        <span class="total-sum">20 000</span>
+                    </div>
+                    <div class="calculate__table-percent">
+                        <span class="calculate__table-before">до</span>
+                        <span class="total-percent">5%</span>
+                    </div>
+                    <div class="calculate__table-text">Потенциальная годовая доходность стратегии</div>
+                </div>
+            </div>
+
+            <div class="selected-strategy">
+
+
+                <div class="card__wr" data-id="1">
+                    <div class="card card_active">
+
+                        <div class="card__wrapper">
+                            <div class="card__percent">
+                                <div class="card__percent-text">В рублях, до</div>
+                                <div class="card__percent-value">36%</div>
+                            </div>
+                            <div class="card__content-wrap">
+                                <div class="card__content">
+                                    <div class="card__header">
+                                        Модельный портфель российских акций со средним уровнем риска
+                                    </div>
+                                    <h3 class="card__name">Выбор ITI Capital</h3>
+                                    <div class="card__text">Эксперты ITI Capital отобрали акции с хорошими<br>перспективами
+                                        роста котировок.<br>
+                                        <hr>Основные секторы инвестирования: нефтегазовый,
+                                        <br>горнодобывающий, технологии, финансы.<br>
+                                        <hr>
+                                        50 000 руб. — минимальная сумма инвестиции.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__footer">
+                            <div class="card__icons">
+                                <a class="card__icon"><img src="img/logo-yandex.svg"></a>
+                                <a class="card__icon"><img src="img/sberbank-logo.svg"></a>
+                                <a class="card__icon"><img src="img/novatek.svg"></a>
+                                <a class="card__dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                            <a class="card__income card__income_active" onclick="o2.cardIncomeClick(this)">
+                                <div class="card__income-icon"><img src="img/Group.svg" alt=""></div>
+                                <div class="card__income-text">
+                                    Рассчитать <br> доходность
+                                </div>
+                            </a>
+                            <button class="button button_card  ">Выбрать этот модельный портфель →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        </div>
+    </section>
+    <section class="strategy">
+        <div class="container">
+            <div class="strategy__icon"><img src="img/document-percent.svg" alt=""></div>
+            <h2 class="strategy__title">Мы приготовили для вас и другие стратегии.<br>
+                Выбирать вам
+            </h2>
+
+
+            <div class="card__wr" data-id="0">
+                <div class="card ">
+
+                    <div class="card__wrapper">
+                        <div class="card__percent">
+                            <div class="card__percent-text">В рублях, до</div>
+                            <div class="card__percent-value">36%</div>
+                        </div>
+                        <div class="card__content-wrap">
+                            <div class="card__content">
+                                <div class="card__header">
+                                    Модельный портфель российских акций со средним уровнем риска
+                                </div>
+                                <h3 class="card__name">Выбор ITI Capital</h3>
+                                <div class="card__text">Эксперты ITI Capital отобрали акции с хорошими<br>перспективами
+                                    роста котировок.<br>
+                                    <hr>Основные секторы инвестирования: нефтегазовый,
+                                    <br>горнодобывающий, технологии, финансы.<br>
+                                    <hr>
+                                    50 000 руб. — минимальная сумма инвестиции.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__icons">
+                            <a class="card__icon"><img src="img/logo-yandex.svg"></a>
+                            <a class="card__icon"><img src="img/sberbank-logo.svg"></a>
+                            <a class="card__icon"><img src="img/novatek.svg"></a>
+                            <a class="card__dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <a class="card__income card__income_active" onclick="o2.cardIncomeClick(this)">
+                            <div class="card__income-icon"><img src="img/Group.svg" alt=""></div>
+                            <div class="card__income-text">
+                                Рассчитать <br> доходность
+                            </div>
+                        </a>
+                        <button class="button button_card  ">Выбрать этот модельный портфель →</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card__wr" data-id="1">
+                <div class="card ">
+
+                    <div class="card__wrapper">
+                        <div class="card__percent">
+                            <div class="card__percent-text">В рублях, до</div>
+                            <div class="card__percent-value">25%</div>
+                        </div>
+                        <div class="card__content-wrap">
+                            <div class="card__content">
+                                <div class="card__header">
+                                    Модельный портфель российских акций со средним уровнем риска
+                                </div>
+                                <h3 class="card__name">Дивидендный</h3>
+                                <div class="card__text">Возможность получить не только дивиденды, но и доход от роста<br> стоимости акций.<br>
+                                    <hr>
+                                    В портфель входят акции с привлекательной дивидендной <br>
+                                    доходностью из секторов: нефтегазовый, добывающий и металлургия.<br>
+                                    <hr>
+                                    50 000 руб. — минимальная сумма инвестиции.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__icons">
+                            <a class="card__icon"><img src="img/Сургутнефтегаз.svg"></a>
+                            <a class="card__icon"><img src="img/dividentnaya-alrosa.svg"></a>
+                            <a class="card__icon"><img src="img/logo-tatneft.svg"></a>
+                            <a class="card__dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <a class="card__income card__income_active" onclick="o2.cardIncomeClick(this)">
+                            <div class="card__income-icon"><img src="img/Group.svg" alt=""></div>
+                            <div class="card__income-text">
+                                Рассчитать <br> доходность
+                            </div>
+                        </a>
+                        <button class="button button_card  ">Выбрать этот модельный портфель →</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card__wr" data-id="2">
+                <div class="card ">
+
+                    <div class="card__wrapper">
+                        <div class="card__percent">
+                            <div class="card__percent-text">В рублях, до</div>
+                            <div class="card__percent-value">17%</div>
+                        </div>
+                        <div class="card__content-wrap">
+                            <div class="card__content">
+                                <div class="card__header">
+                                    Модельный портфель с оптимальным соотношением доходности и риска
+                                </div>
+                                <h3 class="card__name">Сбалансированная доходность</h3>
+                                <div class="card__text">В портфель входят бумаги надежных компаний и облигации<br>федерального займаРФ. Акции обеспечивают повышенную<br> доходность, облигации позволяют снизить уровень риска.<br>
+                                    <hr>50 000 руб. — минимальная сумма инвестиции.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__icons">
+                            <a class="card__icon"><img src="img/OPIF-TGF-RF.svg"></a>
+                            <a class="card__icon"><img src="img/dididentnaya-luk.svg"></a>
+                            <a class="card__icon"><img src="img/obligacionnaya-web-bank.svg"></a>
+                            <a class="card__dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <a class="card__income card__income_active" onclick="o2.cardIncomeClick(this)">
+                            <div class="card__income-icon"><img src="img/Group.svg" alt=""></div>
+                            <div class="card__income-text">
+                                Рассчитать <br> доходность
+                            </div>
+                        </a>
+                        <button class="button button_card  ">Выбрать этот модельный портфель →</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card__wr" data-id="3">
+                <div class="card ">
+
+                    <div class="card__wrapper">
+                        <div class="card__percent">
+                            <div class="card__percent-text">В рублях, до</div>
+                            <div class="card__percent-value">20%</div>
+                        </div>
+                        <div class="card__content-wrap">
+                            <div class="card__content">
+                                <div class="card__header">
+                                    Модельный портфель с низким уровнем риска
+                                </div>
+                                <h3 class="card__name">Облигационный</h3>
+                                <div class="card__text">В портфель входят облигации устойчивых компаний из различных<br> секторов экономики, включая нефтегазовый, финансовый,<br> потребительский, химический и горно-металлургический.<br>
+                                    <hr>
+                                    50 000 руб. — минимальная сумма инвестиции.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__icons">
+                            <a class="card__icon"><img src="img/rosneft-sign.svg"></a>
+                            <a class="card__icon"><img src="img/s1-okay.svg"></a>
+                            <a class="card__icon"><img src="img/logo-uralkaliy.svg"></a>
+                            <a class="card__dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <a class="card__income card__income_active" onclick="o2.cardIncomeClick(this)">
+                            <div class="card__income-icon"><img src="img/Group.svg" alt=""></div>
+                            <div class="card__income-text">
+                                Рассчитать <br> доходность
+                            </div>
+                        </a>
+                        <button class="button button_card  ">Выбрать этот модельный портфель →</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card__wr" data-id="4">
+                <div class="card ">
+
+                    <div class="card__wrapper">
+                        <div class="card__percent">
+                            <div class="card__percent-text">В долларах США, до</div>
+                            <div class="card__percent-value">22%</div>
+                        </div>
+                        <div class="card__content-wrap">
+                            <div class="card__content">
+                                <div class="card__header">
+                                    Модельный портфель американских акций со средним уровнем риска
+                                </div>
+                                <h3 class="card__name">Оптимальный</h3>
+                                <div class="card__text">Эксперты ITI Capital отобрали для портфеля акции крупных<br> американских компаний со сравнительно низким уровнем<br> волатильности (по бета-коэффициенту).<br>
+                                    <hr> Основные секторы инвестирования: информационные технологии,<br> финансовый, промышленный.<br>
+                                    <hr>
+                                    5 000 долл. США — минимальная сумма инвестиции.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__icons">
+                            <a class="card__icon"><img src="img/logo-microsoft.svg"></a>
+                            <a class="card__icon"><img src="img/Visa_Inc._logo.svg"></a>
+                            <a class="card__icon"><img src="img/logo-dow.svg"></a>
+                            <a class="card__dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <a class="card__income card__income_active" onclick="o2.cardIncomeClick(this)">
+                            <div class="card__income-icon"><img src="img/Group.svg" alt=""></div>
+                            <div class="card__income-text">
+                                Рассчитать <br> доходность
+                            </div>
+                        </a>
+                        <button class="button button_card  ">Выбрать этот модельный портфель →</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card__wr" data-id="5">
+                <div class="card ">
+
+                    <div class="card__wrapper">
+                        <div class="card__percent">
+                            <div class="card__percent-text">В рублях, до</div>
+                            <div class="card__percent-value">13%</div>
+                        </div>
+                        <div class="card__content-wrap">
+                            <div class="card__content">
+                                <div class="card__header">
+                                    Модельный портфель российских акций со средним уровнем риска
+                                </div>
+                                <h3 class="card__name">Просто ИИС</h3>
+                                <div class="card__text">Ежегодный гарантированный доход 13%, если регулярно пополнять счет — <br> налоговый вычет, который возвращает государство.<br>
+                                    У вас обязательно должен быть доход, с которого вы платите налоги.<br>
+                                    Максимальная сумма, с которой можно получить налоговый вычет,
+                                    <br> 400 000 руб.
+                                    Минимальной суммы, с которой можно начинать инвестиции, нет.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__icons">
+                            <a class="card__icon"></a>
+                            <a class="card__icon"></a>
+                            <a class="card__icon"></a>
+                            <a class="card__dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <a class="card__income card__income_active" onclick="o2.cardIncomeClick(this)">
+                            <div class="card__income-icon"><img src="img/Group.svg" alt=""></div>
+                            <div class="card__income-text">
+                                Рассчитать <br> доходность
+                            </div>
+                        </a>
+                        <button class="button button_card  ">Выбрать этот модельный портфель →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="more">
+        <div class="container">
+            <div class="more__icon"><img src="img/MP-icon.svg" alt=""></div>
+            <h2 class="more__title">Узнайте больше о модельных портфелях</h2>
+            <div class="more__info">
+                <div class="more__info-icon"><img src="img/portfolio.svg" alt=""></div>
+                <div class="more__info-text">
+                    <span>
+                        Модельный портфель — это несколько ценных бумаг, отобранных по определенным признакам. Например, облигации или акции одного сектора экономики или бумаги <br>
+                        с потенциально хорошим дивидендным доходом.
+                    </span>
+                    <span>
+                        Это удобный инструмент для тех, кто хочет инвестировать, но не готов заниматься
+                        торговлей самостоятельно. Аналитики ITI Capital уже отобрали для вас ценные
+                        бумаги и приготовили портфели для инвестиций с оптимальным соотношениям
+                        риска и доходности.
+                    </span>
+                    <span>
+                        Портфели на нашем постоянном контроле, мы добавляем и убираем бумаги,
+                        чтобы прийти к ожидаемой доходности. Вам только выбрать.
+                    </span>
+
+                    <div clas="more__condition more__condition-firt">Минимальная сумма инвестиций — 50 тыс. руб</div>
+                    <div clas="more__condition">Рекомендуемый срок инвестиции —минимум 6 месяцев</div>
+                    <div clas="more__condition">При необходимости, вы можете вывести деньги досрочно без штрафов и вычетов</div>
+                </div>
+            </div>
+        </div>
+        <div class="more__bg">
+            <div class="container">
+                <div class="more__video"><img src="img/video.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="reasons">
+        <div class="container">
+            <div class="reasons__wrapper">
+                <div class="reasons__logo-block"><img src="img/red logo.svg" alt=""></div>
+                <div class="reasons__title-block">
+                    <h2 class="reasons__title">Почему ITI Capital</h2>
+                </div>
+
+                <div class="reasons__list-block">
+                    <ul class="reasons__list">
+                        <li class="reasons__list-item">
+                            <div class="reasons__list-icon"><img src="../img/reasons-1.svg"></div>
+                            <div class="reasons__list-content">
+                                <h3 class="reasons__list-title">Надежно</h3>
+                                <div class="reasons__list-text">
+                                    Рейтинг надежности ААА <br>
+                                    18 лет на рынке <br>
+                                    Более 15 000 клиентов
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reasons__list-item">
+                            <div class="reasons__list-icon"><img src="../img/reasons-2.svg"></div>
+                            <div class="reasons__list-content">
+                                <h3 class="reasons__list-title">Доступно</h3>
+                                <div class="reasons__list-text">
+                                    Откройте счет дистанционно<br>
+                                    Управляйте счетом и продуктами через Личный кабинет<br>
+                                    Наши консультанты всегда рядом, мы работаем 7 дней в неделю
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reasons__list-item">
+                            <div class="reasons__list-icon"><img src="../img/reasons-3.svg"></div>
+                            <div class="reasons__list-content">
+                                <h3 class="reasons__list-title">Удобно</h3>
+                                <div class="reasons__list-text">
+                                    Подробная информация о счете в Личном кабинете<br>
+                                    Подписывайте документы простым SMS-сообщением<br>
+                                    Все инвестиционные стратегии под контролем наших аналитиков
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reasons__list-item">
+                            <a class="reasons__number" href="tel:+78002003235">
+                                <img src="img/phone.svg">
+                                <span class="reasons__phone">8 (800) 200-32-35</span>
+                            </a>
+                            <a href="#" class="reasons__about-link"> О компании</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="questions">
+        <div class="container">
+            <div class="questions__wrapper">
+                <div class="questions__block">
+                    <h2 class="questions__title">Остались вопросы?</h2>
+                    <div class="questions__subtitle">Ответим в удобное для вас время</div>
+                </div>
+                <div class="questions__buttons">
+                    <button class="button button__questions">Спросить в чате →</button>
+                    <button class="button button__questions">Заказать звонок →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/vendors/jquery-3.4.1.js"></script>
+    <script src="js/vendors/jquery-ui.min.js"></script>
+    <script src="js/vendors/nouislider.js"></script>
+    <script src="js/main.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__logo"><img src="img/logo.svg" alt=""></div>
+                <div class="footer__text">
+                    <span class="footer__text-item">
+                        13% доходность от налогового вычета достигается за счёт внесения на ИИС
+                        равных взносов ежегодно в течение трёх лет. Консенсус-прогноз роста ценных
+                        бумаг на основании данных агентства Bloomberg.
+                    </span>
+                    <span class="footer__text-item">
+                        Настоящая публикация, включая любые её части и отдельные положения,
+                        не может рассматриваться в качестве оферты (включая публичную оферту), приглашения делать оферты. Все расчеты, котировки, процентные ставки,
+                        ставки доходности являются индикативными. Все расчеты могут быть подвержены существенным изменениям в связи изменением рыночной конъюнктуры.
+                    </span>
+                    <span class="footer__text-item">
+                        Прошлые показатели не являются гарантией будущих результатов. Стоимость инвестиций может упасть или вырасти, при этом инвестор может не вернуть себе сумму первоначальных инвестиций.
+                    </span>
+                    <span class="footer__text-item">
+                        Информацию, содержащуюся в данном материале, не следует рассматривать
+                        в качестве предложения, совета, приглашения или побудительной причины приобрести либо продать те или иные ценные бумаги, либо прочие финансовые инструменты.
+                    </span>
+                    <span class="footer__text-item">
+                        Данная информация не основана на конкретных обстоятельствах, связанных
+                        с указанным получателем данной информации.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

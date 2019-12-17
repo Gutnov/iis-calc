@@ -1,0 +1,237 @@
+<html>
+
+<head>
+    <!--[if IE 6]>		<html id="section-reco_main" class="nojs ie6 ieb7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+    <!--[if IE 7]>		<html id="section-reco_main" class="nojs iea6 ie7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+    <!--[if IE 8]>		<html id="section-reco_main" class="nojs iea6 iea7 ie8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+    <!--[if IE 9]>		<html id="section-reco_main" class="nojs iea6 iea7 iea8 ie9 ieb10 split1 nosplit5 platform-PC platform-notouch"><![endif]-->
+    <meta name="viewport" content="width=device-width">
+    <meta name="MobileOptimized" content="320" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta charset="utf-8">
+    <meta name="viewport min-width=320px" content="min-width=320, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+<![endif]-->
+    <title>index</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_wrap">
+                <div class="header__logo"><img src="img/logo.svg" alt=""></div>
+                <a class="header__number" href="tel:+78002003235">8 (800) 200-32-35</a>
+                <h1 class="header__title"></h1>
+                <div class="header__subtitle"></div>
+                <div class="header__percet"></div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <section class="calculate">
+            <div class="container">
+                <div class="calculate__icon"><img src="img/square-percent.svg" alt=""></div>
+                <h2 class="calculate__title">Посчитайте доходность ваших вложений</h2>
+                <div class="calculate__inner">
+                    <div class="calculate__left">
+                        <h3 class="calculate__left-title">Вы готовы инвестировать</h3>
+                        <div class="calculate__left-wrap">
+                            <input type="text">
+                            <span>или</span>
+                            <input type="text">
+                        </div>
+                        <div id="polzunok" class="calculate__slider"></div>
+                    </div>
+                    <div class="calculate__right">
+                        <h3 class="calculate__right-title">Рассчитываете на доходность</h3>
+                        <ul class="calculate__list">
+                            <li class="calculate__list-item">
+                                <div class="calculate__list-before">до</div>
+                                <div class="calculate__list-percent"></div>
+                                <div class="calculate__list-text">Средний уровень риска</div>
+                                <div class="calculate__list-icon"><img src="" alt=""></div>
+                            </li>
+                            <li class="calculate__list-item">
+                                <div class="calculate__list-before">до</div>
+                                <div class="calculate__list-percent"></div>
+                                <div class="calculate__list-text">Средний уровень риска</div>
+                                <div class="calculate__list-icon"><img src="" alt=""></div>
+                            </li>
+                            <li class="calculate__list-item">
+                                <div class="calculate__list-before">до</div>
+                                <div class="calculate__list-percent"></div>
+                                <div class="calculate__list-text">Средний уровень риска</div>
+                                <div class="calculate__list-icon"><img src="" alt=""></div>
+                            </li>
+                            <li class="calculate__list-item">
+                                <div class="calculate__list-before">до</div>
+                                <div class="calculate__list-percent"></div>
+                                <div class="calculate__list-text">Средний уровень риска</div>
+                                <div class="calculate__list-icon"><img src="" alt=""></div>
+                            </li>
+                            <li class="calculate__list-item">
+                                <div class="calculate__list-before">до</div>
+                                <div class="calculate__list-percent"></div>
+                                <div class="calculate__list-text">Средний уровень риска</div>
+                                <div class="calculate__list-icon"><img src="" alt=""></div>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <h3 class="calculate__subtitle">Ваша инвестиция в первый год</h3>
+            <div class="calculate__table">
+                <div class="calculate__table-row">
+                    <div class="calculate__table-number">400 000</div>
+                    <div class="calculate__table-percent">100%</div>
+                    <div class="calculate__table-text">Сумма вашей инвестиции</div>
+                </div>
+                <div class="calculate__table-row">
+                    <div class="calculate__table-number">
+                        <div class="calculate__table-before">до</div>
+                        100 000
+                    </div>
+                    <div class="calculate__table-percent">
+                        
+                        <div class="calculate__table-before">до</div>
+                        25%
+                    </div>
+                    <div class="calculate__table-text">
+                        Потенциальный рост стоимости акций
+                    </div>
+                </div>
+                <div class="calculate__table-row">
+                    <div class="calculate__table-number">
+                        <div class="calculate__table-before">до</div>
+                        20 000
+                    </div>
+                    <div class="calculate__table-percent">
+                        <div class="calculate__table-before">до</div>5%
+                    </div>
+                    <div class="calculate__table-text">Потенциальная доходность от выплаты дивидендов</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    {% for card in cards %}
+        {% include "" with {"cardInfo": cards} %}
+    {% endfor %}
+    
+    <section class="more">
+        <div class="container">
+            <div class="more__icon"><img src="img/MP-icon.svg" alt=""></div>
+            <h2 class="more__title">Узнайте больше о модельных портфелях</h2>
+                <div class="more__info">
+                <div class="more__info-icon"><img src="img/portfolio.svg" alt=""></div>
+                <div class="more__info-text">
+                    Модельный портфель — это несколько ценных бумаг, отобранных по определенным признакам. Например, облигации или акции одного сектора экономики или бумаги 
+                    с потенциально хорошим дивидендным доходом.<br><hr>
+                    Это удобный инструмент для тех, кто хочет инвестировать, но не готов заниматься 
+                    торговлей самостоятельно. Аналитики ITI Capital уже отобрали для вас ценные <br>
+                    бумаги и приготовили портфели для инвестиций с оптимальным соотношениям 
+                    риска и доходности.<br><hr>
+                    Портфели на нашем постоянном контроле, мы добавляем и убираем бумаги, <br>
+                    чтобы прийти к ожидаемой доходности. Вам только выбрать.
+
+                    <span>Минимальная сумма инвестиций — 50 тыс. руб</span>
+                    <span>Рекомендуемый срок инвестиции —минимум 6 месяцев</span>
+                    <span>При необходимости, вы можете вывести деньги досрочно без штрафов и вычетов</span>
+                </div>
+            </div>
+        </div>
+        <div class="more__bg">
+            <div class="container">
+                <div class="more__video"></div>
+            </div>
+        </div>
+    </section>
+    <section class="reasons">
+        <div class="container">
+            <div class="reasons__wrapper">
+                <div class="reasons__logo-block"><img src="img/red logo.svg" alt=""></div>
+                <div class="reasons__title-block">
+                    <h2 class="reasons__title">Почему ITI Capital</h2>
+                </div>
+                <div class="reasons__white-block"></div>
+                <div class="reasons__list-block">
+                    <ul class="reasons__list">
+                        <li>
+                            <div class="reasons__list-icon"></div>
+                            <div class="reasons__list-content">
+                                <h3 class="reasons__list-title"></h3>
+                                <div class="reasons__list-text"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="reasons__list-icon"></div>
+                            <div class="reasons__list-content">
+                                <h3 class="reasons__list-title"></h3>
+                                <div class="reasons__list-text"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="reasons__list-icon"></div>
+                            <div class="reasons__list-content">
+                                <h3 class="reasons__list-title"></h3>
+                                <div class="reasons__list-text"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a href="" class="reasons__about-link"></a>
+
+    <section class="questions">
+    <div class="container">
+        <div class="questions__block">
+            <h2 class="questions__title">Остались вопросы?</h2>
+            <div class="questions__subtitle">Ответим в удобное для вас время</div>
+        </div>
+        <div class="questions__buttons">
+            <button class="buttnon button__questions">Спросить в чате →</button>
+            <button class="buttnon button__questions">Заказать звонок →</button>
+        </div>
+    </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo"><img src="img/logo.svg" alt=""></div>
+            <div class="footer__text">
+                <span class="footer__text-item">
+                    13% доходность от налогового вычета достигается за счёт внесения на ИИС 
+                    равных взносов ежегодно в течение трёх лет. Консенсус-прогноз роста ценных 
+                    бумаг на основании данных агентства Bloomberg.
+                </span>
+                <span class="footer__text-item">
+                    Настоящая публикация, включая любые её части и отдельные положения, 
+                    не может рассматриваться в качестве оферты (включая публичную оферту), приглашения делать оферты. Все расчеты, котировки, процентные ставки, 
+                    ставки доходности являются индикативными. Все расчеты могут быть подвержены существенным изменениям в связи изменением рыночной конъюнктуры.
+                </span>
+                <span class="footer__text-item">
+                    Прошлые показатели не являются гарантией будущих результатов. Стоимость инвестиций может упасть или вырасти, при этом инвестор может не вернуть себе сумму первоначальных инвестиций.
+                </span>
+                <span class="footer__text-item">
+                    Информацию, содержащуюся в данном материале, не следует рассматривать 
+                    в качестве предложения, совета, приглашения или побудительной причины приобрести либо продать те или иные ценные бумаги, либо прочие финансовые инструменты.
+                </span>
+                <span class="footer__text-item">
+                    Данная информация не основана на конкретных обстоятельствах, связанных 
+                    с указанным получателем данной информации.
+                </span>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

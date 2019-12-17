@@ -1,0 +1,40 @@
+.button {
+	border-radius: 100px;
+	border: solid 2px #e05b50;
+	color: #292929;
+	background-color: $white-color;
+	height: 42px;
+	transition: 0.3s all;
+  }
+.button:hover {
+	background-color: #e05b50;
+	color: white;
+	border: none;
+}
+  .button_card {
+	  width: 326px;
+  }
+  
+  .button_active {
+	background-color: #e05b50;
+	color: white;
+	border: none;
+  }
+  .button__questions {
+		width: 214px;
+  }
+  .button__questions:last-child {
+	  margin-left: 25px;
+  }
+@media(max-width:$semi-middle) {
+	.button_card {
+		margin-top: 25px;
+	}
+	.button__questions {
+		margin: 0;
+	}
+	.button__questions:last-child {
+		margin-left: 0;
+		margin-top: 25px;
+	}
+}

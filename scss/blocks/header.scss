@@ -1,0 +1,86 @@
+.header {
+    height: 546px;
+    background: url('../img/main.jpg') center center / cover no-repeat;
+    justify-content: space-between;
+    color: $header-color;
+    padding: 45px 45px 0 32px;
+    text-align: center;
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    &__logo {
+        img {
+            width: 174px;
+            height: 48px;
+        }
+    }
+    &__number {
+        font-size: 21px;
+        font-weight: 500;
+        color: #292929;
+        img {
+            margin-right: 10px;
+        }
+    }
+    &__icon {
+        display: none;
+    }
+    &__title {
+        font-family: $aeroport-font;
+        font-size: 50px;
+        margin-top: 75px;
+    }
+    &__subtitle, &__percent {
+        font-family: $aeroport-font;
+        font-size: 30px;
+        margin-top: 25px;
+    }
+    &__percent {
+        color: #ec231a;
+        margin-top: 10px;
+    }
+}
+@media(max-width:$middle) {
+    .header {
+        &__title {
+            font-size: 45px;
+        }
+        &__subtitle, &__percent {
+            
+        }
+    }
+    
+}
+@media(max-width:$semi-middle) {
+    .header {
+        &__title {
+            font-size: 24px;
+        }
+        &__subtitle, &__percent {
+            font-size: 16px;
+        }
+    }
+    
+}
+
+@media(max-width:$mobile) {
+    .header {
+        padding: 28px 10px 0 10px;
+        &__title {
+            font-size: 24px;
+        }
+        &__subtitle, &__percent {
+            font-size: 16px;
+        }
+        &__icon {
+            display: block;
+        }
+        &__number {
+            display: none;
+        }
+    }
+    
+}
+

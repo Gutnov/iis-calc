@@ -1,0 +1,205 @@
+.card {
+    padding-top: 50px;
+    position: relative;
+    background-color: #fff;
+    max-width: 914px;
+    margin: 0 auto;
+    margin-top: 25px;
+    transition: 0.3s all;
+    &_active {
+        margin-top: 73px;
+    }
+    
+    &_active:hover {
+        box-shadow: none;
+        transform: scale(1);
+    }
+    
+    &_hide {
+        display: none;
+    }
+    
+    &__percent {
+        height: 77px;
+        border-left: 5px solid #ec231a;
+        line-height: 1em;
+        padding: 9px 0 9px 42px;
+        margin-right: 122px;
+        width: 182px;
+        &-text {
+            color: #b2b2b2;
+            font-size: 14px;
+        }
+        &-value {
+            font-family: 'Aeroport';
+            font-size: 48px;
+            line-height: 0.8em;
+            margin-top: 8px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__header {
+        font-size: 14px;
+        color: #808080;
+        margin-bottom: 3px;
+    }
+    &__name {
+        font-family: 'Aeroport';
+        font-size: 35px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 12px;
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 51px 25px 40px;
+        margin-top: 38px;
+        border-top: 1px solid $border-color;
+    }
+    &__icons {
+        display: flex;
+    }
+    &__icon {
+        margin-right: 15px;
+        display: flex;
+        align-items: center;
+        margin-right: 20px !important;
+        font-size: 0;
+        &:nth-child(1) {
+            
+           
+        }
+        &:nth-child(2) {
+            
+        }
+        &:nth-child(3) {
+            margin-right: 10px !important;
+        }
+    }
+    &__dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 43px;
+        text-align: center;
+        span {
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            background-color: #c4c4c4;
+            border-radius: 50%;
+            margin-right: 4px;
+        }
+    }
+    &__income {
+        display: none;
+        margin-left: auto;
+        margin-right: 20px;
+        align-items: center;
+        
+        cursor: pointer;
+        &-icon {
+            display: block;
+            margin-right: 10px;
+            transition: 0.3s all;
+        }
+        &-text {  
+            font-size: 12px;
+            line-height: 1.2em;
+            font-weight: normal;
+            color: #767676;
+        }
+        &_active {
+            display: flex;
+        }
+        &:hover .card__income-icon {
+            transform: translateY(-5px);
+        }
+    }
+    hr {
+        border: none;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.card__wr {
+    transition: 0.3s all;
+}
+
+.card__wr:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.15);
+    
+}
+.card__wr:first-child:hover {
+    transform: scale(1);
+    box-shadow: none;
+    
+}
+
+@media(max-width:$middle) {
+    .card {
+        &__income {
+            padding-left: 0;
+        }
+        &__footer {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        &_active {
+            margin-top: 0;
+        }
+    }
+}
+
+@media(max-width:$semi-middle) {
+    .card {
+        padding-top: 30px;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__name {
+            font-size: 30px;
+        }
+        &__footer {
+            flex-direction: column;
+            align-items: center;
+            border: none;
+            margin-top: 35px;
+            padding: 0;
+            padding-bottom: 40px;
+        }
+        &__percent {
+            border-left: 3px solid #ec231a;
+            padding-left: 11px;
+            padding-top: 0;
+            height: 59px;
+            margin-right: 0;
+            &-value {
+                font-size: 35px;
+            }
+        }
+        &__content-wrap {
+            display: flex;
+            justify-content: center;
+            padding-left: 14px;
+        }
+        &__content {
+            margin-top: 15px;
+        }
+        &__text {
+            max-width: 100%;
+        }
+        &__income {
+            margin-top: 35px;
+        }
+    }
+}

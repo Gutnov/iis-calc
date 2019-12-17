@@ -1,0 +1,41 @@
+
+
+<div class="card__wr" {{cardInfo.data}}>
+    <div class="card {{cardInfo.class_name}}" >
+    
+    <div class="card__wrapper">
+        <div class="card__percent">
+            <div class="card__percent-text">{{cardInfo.currency}}</div>
+            <div class="card__percent-value">{{cardInfo.percent}}</div>
+        </div>
+            <div class="card__content-wrap">
+                <div class="card__content">
+                    <div class="card__header">
+                        {{cardInfo.title}} 
+                    </div>
+                    <h3 class="card__name">{{cardInfo.name}}</h3>
+                    <div class="card__text">{{cardInfo.text}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="card__footer">
+            <div class="card__icons">
+                <a class="card__icon">{{cardInfo.img1}}</a>
+                <a class="card__icon">{{cardInfo.img2}}</a>
+                <a class="card__icon">{{cardInfo.img3}}</a>
+                <a class="card__dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            <a class="card__income card__income_active" onclick="o2.cardIncomeClick(this)">
+                <div class="card__income-icon"><img src="img/Group.svg" alt=""></div>
+                <div class="card__income-text">
+                    Рассчитать <br> доходность
+                </div>
+            </a>
+            <button class="button button_card {{cardInfo.buttnon_class}} ">Выбрать этот модельный портфель →</button>
+        </div>
+    </div>
+</div>

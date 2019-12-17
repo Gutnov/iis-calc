@@ -1,0 +1,25 @@
+.strategy {
+    background-color: $gray-color;
+    margin-top: -210px;
+    padding: 285px 0 75px 0;
+    position: relative;
+    &__icon {
+        text-align: center;
+    }
+    &__title {
+        font-family: 'Aeroport';
+        font-size: 35px;
+        text-align: center;
+        line-height: normal;
+        margin-top: 18px;
+        margin-bottom: 38px;
+    }
+}
+
+@media(max-width:$semi-middle) {
+    .strategy {
+        &__title {
+            font-size: 24px;
+        }
+    }
+}

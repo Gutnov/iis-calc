@@ -1,0 +1,38 @@
+.questions {
+    background-color: $gray-color;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 214px;
+        
+    }
+}
+
+@media(max-width:825px) {
+    .questions {
+        &__wrapper{
+            flex-direction: column;
+            padding: 20px 0;
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width:$semi-middle) {
+    .questions {
+        padding-bottom: 40px;
+        &__buttons {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 25px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+    }
+}
