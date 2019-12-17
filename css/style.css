@@ -1416,7 +1416,7 @@ a.ui-button:active,
   -ms-flex-align: center;
   align-items: center;
   height: 79px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid transparent;
   padding-right: 19px;
   cursor: pointer;
 }
@@ -1521,6 +1521,10 @@ a.ui-button:active,
   height: 60px;
 }
 
+.calculate__table-row-dividends {
+  border-bottom: none;
+}
+
 .calculate__table-number,
 .calculate__table-percent {
   width: 178px;
@@ -1596,6 +1600,10 @@ a.ui-button:active,
 
 .calculate__table-row:last-child .calculate__table-before {
   margin-top: 5px;
+}
+
+.calculate .border-none {
+  border: none;
 }
 
 .calculator {
@@ -2253,6 +2261,7 @@ a {
 
   .card__income {
     padding-left: 0;
+    margin-left: 0;
   }
 
   .card__footer {

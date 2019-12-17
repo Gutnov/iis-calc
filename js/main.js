@@ -2,13 +2,13 @@ $(document).ready(function () {
 	o2.init()
 });
 
-let o2 = 
+let o2 =
 {
 	slider: $('.calculate__slider')[0],
 	currentId: 0,
 	oldYearValue: $('.year-input').val(),
 	oldMonthValue: $('.month-input').val(),
-	init() 
+	init()
 	{
 		this.dropDownInit();
 		this.initSlider();
@@ -17,9 +17,9 @@ let o2 =
 		this.showHideCards(0);
 		this.tableDataChange(0);
 		this.startValue()
-		
+
 	},
-	cards: 
+	cards:
 	[
 		{
 			percent1: 30,
@@ -63,7 +63,7 @@ let o2 =
 			'label': 'без риска',
 			 'id': 5
 		},
-		
+
 
 	],
 	formatNum(number)
@@ -75,7 +75,7 @@ let o2 =
       number = String(number);
       return number.replace(/\s+/g, '');
     },
-	startValue() 
+	startValue()
 	{
 		$('.month-input').val((4167).toLocaleString('ru-RU'));
 		$('.year-input').val((50000).toLocaleString('ru-RU'));
@@ -85,7 +85,7 @@ let o2 =
 		$('.month-input').val((83333).toLocaleString('ru-RU'));
 		$('.year-input').val((1000000).toLocaleString('ru-RU'));
 	},
-	dropDownInit() 
+	dropDownInit()
 	{
 		let calculateListItem = $('.calculate__list-item-wr').html();
 		let items = '';
@@ -96,9 +96,9 @@ let o2 =
 									  .replace(/#id#/g, card.id )
 									  .replace(/#item-id#/g, card.id)
 		}
-		$('.calculate__list').html(items); 
+		$('.calculate__list').html(items);
 	},
-	initSlider() 
+	initSlider()
 	{
 		noUiSlider.create(o2.slider, {
 			animate: true,
@@ -112,15 +112,15 @@ let o2 =
 			step: 5000
 		});
 	},
-	sliderChange() 
+	sliderChange()
 	{
 		o2.slider.noUiSlider.on('slide', function (values, handle) {
-			
+
 			let id = o2.currentId;
 			let val = values[handle];
 			val = Number(val);
-			
-			
+
+
 			$('.month-input').val(val.toLocaleString('ru-RU'));
 			$('.year-input').val((val * 12).toLocaleString('ru-RU'));
 			o2.tableDataChange(id);
@@ -129,7 +129,7 @@ let o2 =
 	sliderOptionsChange(id) {
 		if (id == 4) {
 			$('.month-input').val(27500);
-			
+
 			o2.slider.noUiSlider.updateOptions({
 				range: {
 					'min': 27500,
@@ -187,9 +187,9 @@ let o2 =
 			dividendsPercent = o2.cards[id].percent2,
 			totalPercent,
 			taxPercent = 13;
-			
+
 		yearInputValue = o2.parseNum(yearInputValue);
-		yearInputValue = +yearInputValue;	
+		yearInputValue = +yearInputValue;
 
 		if(yearInputValue > 400000) {
 			taxPercent = (52000 / (yearInputValue / 100)).toFixed(1)
@@ -213,20 +213,22 @@ let o2 =
 			$('.total-percent').text(totalPercent.toPrecision(3) + '%');
 		}
 
-		$('.total-sum').text('=' + Math.round((yearInputValue / 100) * totalPercent + yearInputValue).toLocaleString('ru-RU'));	
+		$('.total-sum').text('=' + Math.round((yearInputValue / 100) * totalPercent + yearInputValue).toLocaleString('ru-RU'));
 	},
 	hideRows(id)
 	{
 		$('.calculate__table-row-dividends').show();
 		$('.calculate__table-row-share').show();
+		$('.calculate__table-row-share').removeClass('border-none')
 		if(id > 1) {
 			$('.calculate__table-row-dividends').hide();
+			$('.calculate__table-row-share').addClass('border-none')
 			if(id == 5) {
 				$('.calculate__table-row-share').hide();
 			}
 		}
 	},
-	calcYearValue() 
+	calcYearValue()
 	{
 		let yearInputValue = $('.year-input').val(),
 			monthInputValue = $('.month-input').val();
@@ -241,7 +243,7 @@ let o2 =
 				$('.year-input').val(yearInputValue.toLocaleString('ru-Ru'))
 				$('.month-input').val(monthInputValue.toLocaleString('ru-Ru'));
 			}
-			
+
 		}else if(monthInputValue < 4167) {
 			o2.startValue();
 		}else  {
@@ -270,7 +272,7 @@ let o2 =
 		}
 	},
 
-	InputChange() 
+	InputChange()
 	{
 		$('.year-input').on('focus', function() {
 			o2.oldYearValue =  Number($('.year-input').val().replace(/\s+/g, ''));
@@ -281,7 +283,7 @@ let o2 =
 			o2.oldMonthValue =  Number($('.month-input').val().replace(/\s+/g, ''));
 			$('.month-input').val(o2.oldMonthValue);
 		});
-		
+
 		$('.month-input').on('change', function () {
 			o2.slider.noUiSlider.set([this.value, null]);
 			o2.calcYearValue();

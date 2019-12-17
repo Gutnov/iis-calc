@@ -35,7 +35,7 @@
             position: relative;
             span {
                 font-size: 14px;
-                padding-top: 25px;  
+                padding-top: 25px;
             }
             .placeholder {
                 position: absolute;
@@ -44,9 +44,9 @@
                 font-size: 12px;
                 color: #808080;
             }
-            
+
         }
-        
+
     }
     &__input {
         max-width: 160px;
@@ -56,7 +56,7 @@
         text-align: right;
         position: relative;
         padding-top: 10px;
-        
+
         input {
             border: none;
             height: 35px;
@@ -73,8 +73,8 @@
         margin-top: 37px;
         height: 4px;
         box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
-        
-        .noUi-handle {            
+
+        .noUi-handle {
             width: 25px;
             height: 40px;
             background: url('../img/Vector\ 3.1.png') center center  no-repeat;
@@ -83,7 +83,7 @@
             box-shadow: none;
         }
         .noUi-handle:before,
-        .noUi-handle:after {            
+        .noUi-handle:after {
             display: none;
         }
         .noUi-origin {
@@ -132,14 +132,14 @@
         justify-content: space-between;
         align-items: center;
         height: 79px;
-        border-bottom: 1px solid $white-color;
+        border-bottom: 1px solid transparent;
         padding-right: 19px;
         cursor: pointer;
         &_hide {
             display: none;
         }
         &_open {
-            border-color: $border-color;;
+             border-color: $border-color;
         }
     }
     &__list {
@@ -154,7 +154,7 @@
             transition: 0.3s all;
             width: 366px;
         }
-        
+
         &-item:hover {
             background-color: $gray-color;
         }
@@ -208,6 +208,9 @@
             display: flex;
             border-bottom: 1px solid $border-color;
             height: 60px;
+            &-dividends {
+                border-bottom: none;
+            }
         }
         &-number, &-percent {
             width: 178px;
@@ -255,14 +258,16 @@
             }
             .calculate__table-percent {
                 border: none;
-                
+
             }
             .calculate__table-before {
                 margin-top: 5px;
             }
         }
     }
-
+    .border-none {
+        border: none
+    }
 }
 
 .calculator {
@@ -375,8 +380,8 @@
         }
         &__title {
             font-size: 24px;
-        } 
-        &__left { 
+        }
+        &__left {
             &-wrap {
                 padding: 0 30px;
                 input {
@@ -392,7 +397,7 @@
             }
             &-title {
                 text-align: center;
-                
+
                 line-height: 0.8em;
             }
         }
@@ -463,10 +468,10 @@
                 padding-top: 10px;
                 padding-bottom: 20px;
                 justify-content: center;
-                
+
                 .calculate__table-text {
                     border: none;
-                    
+
                 }
                 .calculate__table-number {
                     width: auto;
@@ -480,7 +485,7 @@
                     margin-right: auto;
                 }
             }
-            
+
         }
     }
     .calculate {
@@ -502,7 +507,7 @@
 //         &__input {
 //             max-width: 50%;
 //             span {
-                
+
 //             }
 //         }
 //         &__left {
