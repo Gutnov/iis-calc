@@ -39,7 +39,7 @@
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^6.0.0",
     "imagemin-zopfli": "^6.0.0",
-    "node-sass": "^4.8.3",
+    "node-sass": "^7.0.0",
     "gulp-twig": "^1.2.0"
   },
   "dependencies": {
