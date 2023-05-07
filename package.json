@@ -43,7 +43,7 @@
     "gulp-twig": "^1.2.0"
   },
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "nouislider": "^14.1.0"
   }
 }
